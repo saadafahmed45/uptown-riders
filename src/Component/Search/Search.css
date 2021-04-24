@@ -1,0 +1,23 @@
+.search-input {
+    background: rgb(240, 235, 235);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.search-input button {
+    border: none;
+    padding: 6px 42%;
+    background: tomato;
+}
+nav.navbar.navbar-expand.navbar-dark.bg-transparent {
+    border-bottom: 1px solid #ddd;
+}
+iframe {
+    width: 600px;
+    height: 450px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

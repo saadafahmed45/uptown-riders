@@ -1,0 +1,66 @@
+.container{
+    padding-bottom:50px;
+}
+.form-section {
+    box-shadow: 0px 0px 2px;
+    width: 38%;
+    height: 70%;
+    padding: 40px 0px;
+    margin-left: 30%;
+    background: #fafafa;
+    border-radius: 10px;
+
+}
+/* .form-control input-sec {
+    border: 1px solid tomato;
+    margin-top: 20px;
+    border-radius: 25px;
+    padding: 6px 9px;
+} */
+input.form-control.input-sec {
+    width: 45%;
+    margin-left: 26%;
+    border: 1px solid rgb(240, 110, 87);
+    /* margin-top: 20px; */
+    border-radius: 25px;
+    /*padding: 6px 9px;
+     */;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+span img {
+    width: 32px;
+}
+.social-log button {
+    border-radius: 18px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 1px 30px;
+}
+input.submit-btn {
+    border: none;
+    padding: 7px 20%;
+    background: tomato;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.check-box {
+    margin-top: 10px;
+}
+.check-box label {
+    margin-left: 8px;
+    color: #0041d5;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.check-box p {
+    font-size: 14px;
+}
