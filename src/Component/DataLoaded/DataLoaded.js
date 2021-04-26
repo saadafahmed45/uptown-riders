@@ -15,12 +15,15 @@ const DataLoaded = () => {
     return (
         <div>
             
-               <h1>friends : {product.length}</h1>
+               {/* <h1>friends : {product.length}</h1> */}
             <ul>
-                {
-                    product.map(product => <Blog product={product}></Blog>)
+            {
+                    // product.map(product => <Blog product={product}></Blog>)
+                    // product.map(product => <li>{product.name}</li>)
+
                 }
-                <h3>name</h3>
+                 
+                {/* <h3>name{product.name}</h3> */}
             </ul>
         </div>
     );

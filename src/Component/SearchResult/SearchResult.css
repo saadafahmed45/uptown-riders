@@ -1,0 +1,28 @@
+.search-name {
+    background: tomato;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.card img {
+    width: 40px;
+    padding: 3px;
+}
+
+.card h5 {
+    font-size: 20px;
+    opacity:.8;
+
+}
+
+.card p {
+    float: right;
+    font-size: 22px;
+    opacity:.8;
+}
+
+.card {
+    margin-top: 4%;
+    padding:10px;
+}

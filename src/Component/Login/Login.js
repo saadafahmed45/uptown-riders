@@ -137,6 +137,7 @@ const handleFbSignIn = () => {
       newUserInfo[e.target.name] = e.target.value;
       console.log(newUserInfo);
       setUser(newUserInfo);
+    setLoginUser(newUserInfo);
       
     }
   };
@@ -152,6 +153,7 @@ const handleFbSignIn = () => {
           newUserInfo.error = "";
           newUserInfo.success = true;
           setUser(newUserInfo);
+          
           updateUserName(user.name[0])
 
           // Signed in
@@ -220,7 +222,7 @@ const handleFbSignIn = () => {
         <div className='user-sec'>
           <p>welcome! {user.name}</p>
           <p>Your Email {user.email}</p>
-          <img src={user.photo} alt="" />
+          {/* <img src={user.photo} alt="" /> */}
         </div>
       )}
  

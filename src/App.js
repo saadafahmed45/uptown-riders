@@ -12,7 +12,6 @@ import Home from './Component/Home/Home';
 import NotFound from './Component/NotFound.js/NotFound';
 import Destination from './Component/Destination/Destination';
 import Blog from './Component/Blog/Blog';
-import Bike from './Component/Bike/Bike';
 import Header from './Component/Header/Header';
 import DataLoaded from './Component/DataLoaded/DataLoaded';
 import Search from './Component/Search/Search';
@@ -31,8 +30,7 @@ function App() {
     <UserContext.Provider value={[loginUser,setLoginUser]}>
 
     <div className="App">
-      <div className="main-section"
-        >
+      <div className="main-section">
       <Router>
 
         <Switch>
@@ -47,22 +45,23 @@ function App() {
 
      {/* home */}
 
+      <PrivateRoute path="/destination">
+             <Destination></Destination>
+          </PrivateRoute>
+
           <PrivateRoute path="/search">
               <Search></Search>
           </PrivateRoute>
       
-
-          <PrivateRoute path="/destination">
-             <Destination></Destination>
-          </PrivateRoute>
- 
-
-          <PrivateRoute path="/blog">
+          <Route path="/blog">
              <Blog></Blog>
-          </PrivateRoute>
+
+          </Route>
+         
 
           <Route path="/contact">
            <Contact></Contact>
+           <DataLoaded></DataLoaded>
           </Route>
 
           <Route path="/login"> 
@@ -80,7 +79,7 @@ function App() {
 
           
         </Switch>
-    </Router>
+      </Router>
       </div>
     
     </div>
