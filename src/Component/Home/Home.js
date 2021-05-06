@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, { useContext }  from 'react';
 import Header from '../Header/Header';
 import './Home.css'
 import Bike from "../images/Frame.png";
@@ -6,6 +6,7 @@ import Car from "../images/Frame-1.png";
 import Bus from "../images/Frame-2.png";
 import Train from "../images/Group.png";
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 // import { useParams } from 'react-router';
 
 const Home = () => {
@@ -18,13 +19,20 @@ const Home = () => {
  const handleChange = () => {
      console.log('this click');
 
-     
  }
+   const [loginUser,setLoginUser] = useContext(UserContext);
 
     return (
+      
         <div className="home_sec">
           <Header></Header>
             <div className="container">
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <h1>Hello,{loginUser.name}</h1>
+              </div>
+            </div>
+
               <div className="row">
               
                 <div className="col-md-3">

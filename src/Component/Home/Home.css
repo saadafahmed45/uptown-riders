@@ -3,6 +3,9 @@
     background-size: cover;
     background-position:center;
     height: 100vh;  
+    display: flex;
+    flex-direction: column;
+
 
 }
 
@@ -41,7 +44,6 @@ ul li:hover {
     text-align: center;
     margin-top: 42%;
     transition:.4s;
-    
 }
 .box:hover{
     background: #fff;
